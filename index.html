@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contrast Color Test</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Contrast Color Test</h1>
+
+    <section class="controls">
+      <label>
+        Foreground color
+        <input id="foreground" type="text" value="#000000" />
+      </label>
+
+      <label>
+        Background color
+        <input id="background" type="text" value="#ffffff" />
+      </label>
+
+      <button id="checkButton">Check Contrast</button>
+    </section>
+
+    <section id="preview" class="preview">
+      <h2>Sample heading</h2>
+      <p>This is sample paragraph text.</p>
+      <button>Sample button</button>
+    </section>
+
+    <section class="results">
+      <p>Contrast ratio: <strong id="ratio">—</strong></p>
+      <p>Status: <strong id="status">—</strong></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
