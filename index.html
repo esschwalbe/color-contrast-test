@@ -8,17 +8,20 @@
 </head>
 <body>
   <main class="app">
-    <h1>Contrast Color Test</h1>
+    <h1>Color Coach</h1>
+      <p> Find accessible color combinations that meet WCAG contrast requirements.</p>
 
     <section class="controls">
       <label>
         Foreground color
         <input id="foreground" type="text" value="#000000" />
+        <input id="foregroundPicker" type="color" value="#000000" />
       </label>
 
       <label>
         Background color
         <input id="background" type="text" value="#ffffff" />
+        <input id="backgroundPicker" type="color" value="#ffffff" />
       </label>
 
       <button id="checkButton">Check Contrast</button>
