@@ -1,5 +1,7 @@
 const foregroundInput = document.getElementById("foreground");
 const backgroundInput = document.getElementById("background");
+const foregroundPicker = document.getElementById("foregroundPicker");
+const backgroundPicker = document.getElementById("backgroundPicker");
 const checkButton = document.getElementById("checkButton");
 const preview = document.getElementById("preview");
 const ratioOutput = document.getElementById("ratio");
@@ -78,5 +80,25 @@ function checkContrast() {
 }
 
 checkButton.addEventListener("click", checkContrast);
+
+foregroundPicker.addEventListener("input", () => {
+  foregroundInput.value = foregroundPicker.value;
+  checkContrast();
+});
+
+backgroundPicker.addEventListener("input", () => {
+  backgroundInput.value = backgroundPicker.value;
+  checkContrast();
+});
+
+foregroundInput.addEventListener("input", () => {
+  foregroundPicker.value = foregroundInput.value;
+  checkContrast();
+});
+
+backgroundInput.addEventListener("input", () => {
+  backgroundPicker.value = backgroundInput.value;
+  checkContrast();
+});
 
 checkContrast();
